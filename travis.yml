@@ -4,4 +4,8 @@ os: linux
 
 arch: ppc64le
 
-script: uname -a
+dist: bionic
+
+script: 
+ - uname -a
+ - apt-get update
