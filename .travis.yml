@@ -11,5 +11,5 @@ script:
  - sudo apt-get install -y qemu-utils
  - git clone https://github.com/ocp-power-automation/infra.git; cd ./infra/scripts/images
  - wget https://cloud.centos.org/centos/8/ppc64le/images/CentOS-8-GenericCloud-8.2.2004-20200611.2.ppc64le.qcow2
- - sudo ./convert_qcow2_ova.py -u ./CentOS-8-GenericCloud-8.2.2004-20200611.2.ppc64le.qcow2 -s 3 -n centos82-openpowerlab-09182020 -d centos -O passw0rd
+ - sudo ./convert_qcow2_ova.py -u ./CentOS-8-GenericCloud-8.2.2004-20200611.2.ppc64le.qcow2 -s 3 -n centos82-openpowerlab-09182020 -d centos -U root -P root -O passw0rd
  - ls -la
